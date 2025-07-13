@@ -1,0 +1,21 @@
+apiVersion: backstage.io/v1alpha1
+kind: Resource
+metadata:
+  name: twfqcg2si-nodejs-gitops
+  description: This is GitOps manifest for twfqcg2si-nodejs   
+  links:
+    - url: https://www.redhat.com/en/solutions/trusted-software-supply-chain
+      title: Trusted Secure Supply Chain 
+      icon: dashboard
+      type: admin-dashboard
+  annotations:    
+    argocd/app-selector: tssc/gitops=twfqcg2si-nodejs
+    backstage.io/kubernetes-id: twfqcg2si-nodejs 
+    backstage.io/techdocs-ref: dir:. 
+    janus-idp.io/tekton: twfqcg2si-nodejs
+spec:
+  type: gitops
+  owner: user:guest 
+  lifecycle: experimental
+  dependsOn:
+    - component:twfqcg2si-nodejs

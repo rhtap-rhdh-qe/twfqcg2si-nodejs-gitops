@@ -1,0 +1,6 @@
+apiVersion: "pipelinesascode.tekton.dev/v1alpha1"
+kind: Repository
+metadata:
+  name: twfqcg2si-nodejs-repository
+spec:
+  url: https://github.com/rhtap-rhdh-qe/twfqcg2si-nodejs
